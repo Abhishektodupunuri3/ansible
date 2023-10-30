@@ -1,7 +1,7 @@
 - name: Configuring {{COMPONENT}} Repository
   ansible.builtin.copy
-    src:mysql.repo
-    dest: /etc/yum.repos.d/mysql.repo
+    src: mysql.repo
+    dest: /etc/yum.repos.d/mongodb.repo
 
 - name: Installing {{COMPONENT}}
    ansible.builtin.package:
