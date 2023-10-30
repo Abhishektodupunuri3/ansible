@@ -1,15 +1,17 @@
+
+
 - name: Configuring {{COMPONENT}} Repository
   ansible.builtin.copy:
     src: mysql.repo
-    dest: /etc/yum.repos.d/mongodb.repo
+    dest: /etc/yum.repos.d/{{COMPONENT}}.repo 
 
-- name: Installing {{COMPONENT}}
-   ansible.builtin.package:
-      name: mqsql-community-server
-      state: present
+- name: Installing {{COMPONENT}} 
+  ansible.builtin.yum:
+    name: mysql-community-server
+    state: present
 
-- name: Starting {{COMPONENT}}
-   ansible.builtin.systemd:
+- name: Starting {{COMPONENT}} 
+  ansible.builtin.systemd:
     name: mysqld
     state: started
-    enabled: true
+    enabled: true 
