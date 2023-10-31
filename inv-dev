@@ -21,6 +21,7 @@ mysql-dev.roboshop.internal
 
 [shipping]
 shipping-dev.roboshop.internal
+ 172.31.25.181
 
 [rabbitmq]
 rabbitmq-dev.roboshop.internal
