@@ -24,7 +24,7 @@ cart-dev.roboshop.internal
 
 [mysql]
 mysql-dev.roboshop.internal
- 172.31.26.243
+  172.31.16.76
 
 [shipping]
 shipping-dev.roboshop.internal
