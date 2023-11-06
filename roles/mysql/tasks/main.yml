@@ -7,7 +7,9 @@
 
 - name: Installing {{COMPONENT}} 
   ansible.builtin.yum:
-    name: mysql-community-server
+    name: 
+        - mysql-community-server
+        - Python3-PyMySQL
     state: present
 
 - name: Starting {{COMPONENT}} 
@@ -46,7 +48,7 @@
   ansible.builtin.include_role:
     name: common
     tasks_from: download
-    
+
 - name: Injecting the {{COMPONENT}} Schema
   community.mysql.mysql_db:
     state: import
