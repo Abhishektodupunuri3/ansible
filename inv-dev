@@ -1,39 +1,36 @@
 [frontend]
 frontend-dev.roboshop.internal
- 172.31.29.15
-
+ 
 [mongodb]
 mongodb-dev.roboshop.internal
- 172.31.18.181
+
 
 [catalogue]
 catalogue-dev.roboshop.internal
- 172.31.17.210
+ 
 
 [redis]
 redis-dev.roboshop.internal
- 172.31.22.189
+ 
 
 [user]
 user-dev.roboshop.internal
- 172.31.20.66
+ 
 
 [cart]
 cart-dev.roboshop.internal
- 172.31.30.203
+ 
 
 [mysql]
 mysql-dev.roboshop.internal
-  172.31.16.76
+  
 
 [shipping]
 shipping-dev.roboshop.internal
- 172.31.25.181
+ 
 
 [rabbitmq]
 rabbitmq-dev.roboshop.internal
-172.31.21.198
 
 [payment]
 payment-dev.roboshop.internal
- 172.31.28.178
